@@ -150,7 +150,7 @@ table {
     font-size: 1rem;
     height: 2rem;
     width: 30%;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-indent: 1%;
     margin-bottom: 1%;
   }
@@ -265,7 +265,7 @@ table {
     font-size: 1rem;
     height: 2rem;
     width: 50%;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-indent: 1%;
     margin-bottom: 1%;
   }
@@ -370,7 +370,7 @@ table {
     font-size: 1rem;
     height: 2rem;
     width: 70%;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-indent: 1%;
     margin-bottom: 1%;
   }
