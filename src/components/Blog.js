@@ -18,6 +18,10 @@ export const Blog = () => {
                     <h1>Deleting a record from a join-table without deleting records from other tables</h1>
                     <a href="https://medium.com/@chilinski.a/deleting-a-record-from-a-join-table-without-deleting-records-from-other-tables-ruby-on-rails-1bf832c7a479" target="_blank"><img className="blog-photo" src="https://images.unsplash.com/photo-1526270100824-f033a2377d62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ1NDExfQ&auto=format&fit=crop&w=3819&q=80"></img></a>
                 </div>
+                <div className="blog-description">
+                    <h1>NPM scripts and concurrently — utilizing Node.js tools</h1>
+                    <a href="https://medium.com/@chilinski.a/npm-scripts-and-concurrently-utilizing-node-js-tools-9e91b8c6c1dd" target="_blank"><img className="blog-photo" src="https://images.unsplash.com/photo-1544980919-e17526d4ed0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3451&q=80"></img></a>
+                </div>
             </div>
         </>
     )
