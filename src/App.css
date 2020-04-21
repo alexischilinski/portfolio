@@ -1,38 +1,693 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* end reset */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.header {
+  width: 100%;
+  height: 12%;
+  padding-top: 2rem;
+  background-color: #3c6382;
+  /* background-color: #695277; */
+  /* background-color: #485b09; */
+  display: flex;
+  /* justify-content: space-between; */
+  position: fixed;
+  z-index: 2;
+}
+
+@media only screen and (min-device-width: 1100px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .about-title {
+    color: white;
+    margin-top: 12%;
+    align-self: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    /* margin-top: 20%; */
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    background: 0.5;
+    width: 40%;
+    border-radius: 3rem;
+    align-self: center;
+    padding: 1%;
+  }
+
+  .image {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 7rem;
+    border: solid black 0.1rem;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .about-blurb {
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  .project h1 {
+    font-size: 150%;
+  }
+
+  .blog-description h1 {
+    font-size: large;
+  }
+
+  .blog-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name-input {
+    width: 30%;
+    font-size: 1rem;
+    height: 2rem;
+    text-indent: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .email-input {
+    font-size: 1rem;
+    height: 2rem;
+    width: 30%;
+    font-weight: bold;
+    text-indent: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .message-input {
+    font-family: 'Quicksand', sans-serif;
+    align-self: center;
+    width: 30%;
+    font-size: 1rem;
+    font-weight: normal;
+    height: 10rem;
+    margin-bottom: 1%;
+    text-indent: 1%;
+  }
+  
+  .pageclip-form button {
+    cursor: pointer;
+    width: 5%;
+    height: 2rem;
+    align-self: center;
+    margin-bottom: 1%;
+    font-size: 1rem;
+    border-radius: 2rem;
+    /* background-color: #3c6382; */
+    border: none;
+    /* color: white; */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media only screen and (min-device-width: 600px) and (max-device-width: 1050px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .header h3 {
+    text-align: center;
+  }
+
+  .about-title {
+    color: white;
+    margin-top: 25%;
+    align-self: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+  }
+
+  .image {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 7rem;
+    border: solid black 0.1rem;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .about-blurb {
+    margin-top: 1%;
+    /* width: 100%; */
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    /* margin-top: 20%; */
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    background: 0.5;
+    width: 80%;
+    border-radius: 3rem;
+    align-self: center;
+    padding: 1%;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  .project h1 {
+    font-size: 120%;
+  }
+
+  .blog-description h1 {
+    font-size: 0.7rem;
+  }
+
+  .blog-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name-input {
+    width: 50%;
+    font-size: 1rem;
+    height: 2rem;
+    text-indent: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .email-input {
+    font-size: 1rem;
+    height: 2rem;
+    width: 50%;
+    font-weight: bold;
+    text-indent: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .message-input {
+    font-family: 'Quicksand', sans-serif;
+    align-self: center;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: normal;
+    height: 10rem;
+    margin-bottom: 1%;
+    text-indent: 1%;
+  }
+  
+  .pageclip-form button {
+    cursor: pointer;
+    width: 10%;
+    height: 2rem;
+    align-self: center;
+    margin-bottom: 1%;
+    font-size: 1rem;
+    border-radius: 2rem;
+    /* background-color: #3c6382; */
+    border: none;
+    /* color: white; */
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 200%;
+  }
+
+  .header h3 {
+    text-align: center;
+  }
+
+  .about-title {
+    color: white;
+    margin-top: 40%;
+    align-self: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+  }
+
+  .image {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 7rem;
+    border: solid black 0.1rem;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .about-blurb {
+    margin-top: 1%;
+    /* width: 100%; */
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    /* margin-top: 20%; */
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    background: 0.5;
+    width: 80%;
+    border-radius: 3rem;
+    align-self: center;
+    padding: 1%;
+  }
+
+  .blog-section {
+    display: none;
+  }
+
+  .blog-title {
+    display: none;
+  }
+
+  .name-input {
+    width: 70%;
+    font-size: 1rem;
+    height: 2rem;
+    text-indent: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .email-input {
+    font-size: 1rem;
+    height: 2rem;
+    width: 70%;
+    font-weight: bold;
+    text-indent: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .message-input {
+    font-family: 'Quicksand', sans-serif;
+    align-self: center;
+    width: 70%;
+    font-size: 1rem;
+    font-weight: normal;
+    height: 10rem;
+    margin-bottom: 1%;
+    text-indent: 1%;
+  }
+
+  .pageclip-form button {
+    cursor: pointer;
+    width: 15%;
+    height: 1.5rem;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 1rem;
+    border-radius: 2rem;
+    /* background-color: #3c6382; */
+    border: none;
+    /* color: white; */
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 50%;
+  }
+
+  .project h1{
+    align-self: center;
+  }
+
+  .project p {
+    display: none;
+  }
+}
+
+.header h1 {
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  /* font-size: 4rem; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header h3 {
+  font-family: 'Quicksand', sans-serif;
+  color: lightgrey;
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  align-items: center;
+  margin-left: 1%;
 }
+
+.navbar {
+  width: 20%;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+}
+
+/* .page-links li {
+  margin: 3%;
+} */
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+/* .links a {
+  margin: 3%;
+  width: 2rem;
+  height: 2rem;
+} */
+
+.icon {
+  margin: 3%;
+  width: 2rem;
+  height: 2rem;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.github {
+  background-image: url('https://image.flaticon.com/icons/svg/25/25231.svg');
+}
+
+.linkedin {
+  background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png');
+}
+
+.blog {
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/medium-47-433328.png');
+}
+
+.github:hover {
+  background-image: url('https://image.flaticon.com/icons/svg/25/25231.svg');
+  opacity: 0.5;
+}
+
+.linkedin:hover {
+  background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png');
+  opacity: 0.5;
+}
+
+.blog:hover {
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/medium-47-433328.png');
+  opacity: 0.5;
+}
+
+.youtube {
+  background-image: url('https://clipartart.com/images/youtube-clipart-black-and-white-1.png');
+}
+
+/* .about-title {
+  color: white;
+  margin-top: 12%;
+  align-self: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+} */
+
+
+
+/* .image {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 7rem;
+  border: solid black 0.1rem;
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
+  background-size: 100%;
+  background-position: center;
+} */
+
+/* .about-blurb {
+  margin-top: 1%;
+  width: 100%;
+  text-align: center;
+} */
+
+.about-blurb p {
+  margin: 1%;
+}
+
+.section-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  align-self: center;
+  color: white;
+  margin-top: 5%;
+}
+
+.projects {
+  width: 70%;
+  align-self: center;
+  margin-top: 1%;
+  /* margin-bottom: 1%; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+  border-radius: 3rem;
+  padding: 1%;
+}
+
+.project {
+  text-align: center;
+  color: black;
+  /* width: 30%; */
+  margin: 1%;
+  margin-bottom: 5%;
+}
+
+.project h1 {
+  font-weight: bold;
+  /* font-size: 120%; */
+  margin-bottom: 1%;
+}
+
+.built {
+  margin-top: 5%;
+}
+
+.project-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  border: solid black 0.1rem;
+}
+
+.project-photo:hover {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  border: solid #bd1c05 0.1rem;
+  /* border: solid #9fad5b 0.1rem; */
+}
+
+.hovering:hover {
+  color: #bd1c05;
+  /* color: #9fad5b; */
+}
+
+.project-icon {
+  cursor: pointer;
+  margin: 0.7%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+
+.date {
+  color: gray;
+  margin: 1%;
+}
+
+.blog-section {
+  margin-top: 1%;
+  /* margin-bottom: 1%; */
+  background-color: white;
+  border-radius: 3rem;
+  width: 70%;
+  align-self: center;
+  /* display: flex;
+  justify-content: center; */
+  font-family: 'Quicksand', sans-serif;
+  padding: 1%;
+}
+
+.blog-description {
+  align-self: center;
+  width: 40%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* color: gray; */
+}
+
+.blog-description:hover {
+  align-self: center;
+  width: 40%;
+  margin: 1%;
+  display: flex;
+  color: #bd1c05;
+  /* color: #9fad5b; */
+}
+
+.blog-description h1 {
+  font-weight: bold;
+  width: 15%;
+  position: absolute;
+  text-align: center;
+  align-self: center;
+  /* font-size: large; */
+  margin-bottom: 2%;
+}
+
+.blog-description a {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-photo {
+  width: 70%;
+  /* height: 80%; */
+  border-radius: 2rem;
+  border: solid black 0.1rem;
+  opacity: 0.4;
+}
+
+.blog-photo:hover {
+  width: 70%;
+  /* height: 80%; */
+  border-radius: 2rem;
+  border: solid #bd1c05 0.1rem;
+  opacity: 0.4;
+  /* border: solid #9fad5b 0.1rem; */
+}
+
+.pageclip-form {
+  display: flex;
+  flex-direction: column;
+  /* align-self: center; */
+  margin-top: 1%;
+  margin-bottom: 17%;
+}
+
+.pageclip-form input {
+  font-family: 'Quicksand', sans-serif;
+  /* margin: 1%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
