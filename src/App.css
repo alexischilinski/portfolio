@@ -60,8 +60,7 @@ table {
 .header {
   width: 100%;
   height: 12%;
-  padding-top: 2rem;
-  background-color: #3c6382;
+  background-color: black;
   /* background-color: #695277; */
   /* background-color: #485b09; */
   display: flex;
@@ -73,6 +72,8 @@ table {
 @media only screen and (min-device-width: 1100px) {
   .header {
     justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 1%;
   }
 
   .header h1 {
@@ -183,6 +184,8 @@ table {
 @media only screen and (min-device-width: 600px) and (max-device-width: 1050px) {
   .header {
     justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 1%;
   }
 
   .header h1 {
@@ -289,15 +292,14 @@ table {
     margin-bottom: 1%;
     font-size: 1rem;
     border-radius: 2rem;
-    /* background-color: #3c6382; */
     border: none;
-    /* color: white; */
   }
 }
 
 @media only screen and (max-device-width: 500px) {
   .header {
     justify-content: center;
+    padding-top: 5%;
   }
 
   .header h1 {
@@ -329,7 +331,6 @@ table {
 
   .about-blurb {
     margin-top: 1%;
-    /* width: 100%; */
     text-align: center;
     font-size: 0.9rem;
   }
@@ -339,7 +340,6 @@ table {
     flex-direction: column;
     align-items: center;
     margin-top: 1%;
-    /* margin-top: 20%; */
     color: black;
     font-family: 'Quicksand', sans-serif;
     background-color: white;
@@ -370,7 +370,6 @@ table {
     font-size: 1rem;
     height: 2rem;
     width: 70%;
-    /* font-weight: bold; */
     text-indent: 1%;
     margin-bottom: 1%;
   }
@@ -395,9 +394,7 @@ table {
     margin-bottom: 1%;
     font-size: 1rem;
     border-radius: 2rem;
-    /* background-color: #3c6382; */
     border: none;
-    /* color: white; */
   }
 
   .projects {
@@ -421,7 +418,6 @@ table {
 .header h1 {
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
-  /* font-size: 4rem; */
   color: white;
 }
 
@@ -587,12 +583,12 @@ table {
   width: 100%;
   height: auto;
   border-radius: 2rem;
-  border: solid #bd1c05 0.1rem;
+  border: solid gray 0.1rem;
   /* border: solid #9fad5b 0.1rem; */
 }
 
 .hovering:hover {
-  color: #bd1c05;
+  color: gray;
   /* color: #9fad5b; */
 }
 
@@ -641,7 +637,7 @@ table {
   width: 40%;
   margin: 1%;
   display: flex;
-  color: #bd1c05;
+  color: gray;
   /* color: #9fad5b; */
 }
 
@@ -672,7 +668,7 @@ table {
   width: 70%;
   /* height: 80%; */
   border-radius: 2rem;
-  border: solid #bd1c05 0.1rem;
+  border: solid gray 0.1rem;
   opacity: 0.4;
   /* border: solid #9fad5b 0.1rem; */
 }
