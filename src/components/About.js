@@ -6,8 +6,8 @@ export const About = () => {
         <>
             <h1 className="about-title">About</h1>
             <div className="about">
-                <div className="image"></div>
-                {/* <img className="about-photo" src={headshot}></img> */}
+                {/* <div className="image"></div> */}
+                <img className="image" src={headshot}></img>
                 <div className="about-blurb">
                     <p>I am a software engineer from Boston, Massachusetts. I build full-stack applications in an array of languages and frameworks including
                         Ruby on Rails, Node, Python, Django, and React.

@@ -103,7 +103,7 @@ table {
 
   .image {
     height: 12rem;
-    width: 12rem;
+    width: auto;
     border-radius: 7rem;
     border: solid black 0.1rem;
     background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
@@ -200,7 +200,7 @@ table {
 
   .image {
     height: 6rem;
-    width: 6rem;
+    width: auto;
     border-radius: 7rem;
     border: solid black 0.1rem;
     background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
@@ -311,7 +311,7 @@ table {
 
   .image {
     height: 6rem;
-    width: 6rem;
+    width: auto;
     border-radius: 7rem;
     border: solid black 0.1rem;
     background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
