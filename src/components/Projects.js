@@ -10,7 +10,7 @@ export const Projects = () => {
             <div className="projects">
                 <div className="project">
                     <div className="hovering">
-                        <a href="https://capstone-ontrack.firebaseapp.com" target="_blank"><img className="project-photo" src={ontrack}></img></a>
+                        <a href="https://capstone-ontrack.web.app/" target="_blank"><img className="project-photo" src={ontrack}></img></a>
                         <h1>OnTrack</h1>
                         {/* <p className="date">created in March 2020</p> */}
                     </div>
@@ -22,7 +22,7 @@ export const Projects = () => {
                 </div>
                 <div className="project">
                     <div className="hovering">
-                        <a href="https://starwars101mod4.firebaseapp.com/" target="_blank"><img className="project-photo" src={starwars}></img></a>
+                        <a href="https://starwars101mod4.web.app/" target="_blank"><img className="project-photo" src={starwars}></img></a>
                         <h1>Star Wars 101</h1>
                         {/* <p className="date">created in February 2020</p> */}
                     </div>
@@ -34,7 +34,7 @@ export const Projects = () => {
                 </div >
                 <div className="project">
                     <div className="hovering">
-                        <a href="https://mod3seafood.firebaseapp.com/" target="_blank"><img className="project-photo" src={SEAstainability}></img></a>
+                        <a href="https://mod3seafood.web.app/" target="_blank"><img className="project-photo" src={SEAstainability}></img></a>
                         <h1>SEAstainability</h1>
                         {/* <p className="date">created in January 2020</p> */}
                     </div>
