@@ -173,8 +173,7 @@ table {
   
   .pageclip-form button {
     cursor: pointer;
-    width: 5%;
-    height: 2rem;
+    width: max-content;
     align-self: center;
     margin-bottom: 1%;
     font-size: 1rem;
@@ -287,8 +286,8 @@ table {
   
   .pageclip-form button {
     cursor: pointer;
-    width: 10%;
-    height: 2rem;
+    width: max-content;
+    text-align: center;
     align-self: center;
     margin-bottom: 1%;
     font-size: 1rem;
@@ -402,8 +401,8 @@ table {
 
   .pageclip-form button {
     cursor: pointer;
-    width: 15%;
-    height: 1.5rem;
+    width: max-content;
+    text-align: center;
     align-self: center;
     margin-top: 1%;
     margin-bottom: 1%;
