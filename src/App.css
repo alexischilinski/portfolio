@@ -70,12 +70,16 @@ table {
 @media only screen and (min-device-width: 1100px) {
   .header {
     justify-content: space-between;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
   }
 
   .header h1 {
     font-size: 4rem;
+  }
+
+  iframe {
+    margin-right: 1rem;
   }
 
   .about-title {
@@ -177,15 +181,14 @@ table {
   .header {
     justify-content: center;
     padding-top: 4%;
-    padding-bottom: 1%;
   }
 
   .header h1 {
-    font-size: 4rem;
+    font-size: 2.6rem;
   }
 
-  .header h3 {
-    text-align: center;
+  iframe {
+    margin-left: 2rem;
   }
 
   .about-title {
@@ -286,10 +289,18 @@ table {
   .header {
     justify-content: center;
     padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    height: max-content
   }
 
   .header h1 {
+    text-align: center;
     font-size: 200%;
+  }
+
+  iframe {
+    margin-top: 3%;
   }
 
   .header h3 {
@@ -298,7 +309,7 @@ table {
 
   .about-title {
     color: white;
-    margin-top: 40%;
+    margin-top: 55%;
     align-self: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -383,6 +394,7 @@ table {
   .projects {
     flex-direction: column;
     align-items: center;
+
   }
 
   .project {
@@ -502,7 +514,6 @@ table {
   text-align: center;
   color: black;
   margin: 1%;
-  margin-bottom: 5%;
 }
 
 .project h1 {
@@ -542,15 +553,11 @@ table {
   background-color: transparent;
 }
 
-.date {
-  color: gray;
-  margin: 1%;
-}
-
 .blog-section {
   margin-top: 1%;
   background-color: white;
   width: 70%;
+  flex-wrap: wrap;
   align-self: center;
   font-family: 'Open Sans', sans-serif;
   padding: 1%;
@@ -558,7 +565,7 @@ table {
 
 .blog-description {
   align-self: center;
-  width: 40%;
+  width: 30%;
   margin: 1%;
   display: flex;
   flex-direction: column;
@@ -567,7 +574,7 @@ table {
 
 .blog-description:hover {
   align-self: center;
-  width: 40%;
+  width: 30%;
   margin: 1%;
   display: flex;
   color: gray;
@@ -575,7 +582,7 @@ table {
 
 .blog-description h1 {
   font-weight: bold;
-  width: 15%;
+  width: 13%;
   position: absolute;
   text-align: center;
   align-self: center;
@@ -603,7 +610,7 @@ table {
   display: flex;
   flex-direction: column;
   margin-top: 1%;
-  margin-bottom: 17%;
+  margin-bottom: 5%;
 }
 
 .pageclip-form input {
@@ -611,5 +618,13 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* .playlist {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  border: solid white 0.5rem;
+} */
 
 
