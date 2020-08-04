@@ -75,7 +75,7 @@ table {
   }
 
   .header h1 {
-    font-size: 4rem;
+    font-size: 350%;
   }
 
   iframe {
@@ -107,8 +107,9 @@ table {
 
   .image {
     margin-top: 2%;
-    height: 12rem;
-    width: auto;
+    /* height: fit-content; */
+    height: auto;
+    width: 50%;
     border: solid black 0.1rem;
     background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGX-1dxPQzK-g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=TNjuipCeKT5oSfnIK574hY6KKWW1XDRhMJLXnaba2uU');
     background-size: 100%;
